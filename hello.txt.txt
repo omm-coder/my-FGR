@@ -1,0 +1,3 @@
+hello, my first file to added my git-hub account 
+my-FGR this my repository's name of git-hub 
+and it's the abbreviation of First Git-hub- Repository.
