@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "popins";
+    /* font-family: Geneva, Tahoma, sans-serif; */
+}
+body {
+    background-color: rgb(149, 201, 246);
+}
+.container {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+
+}
+
+.container > img {
+    /* padding: .5rem; */
+    width: 100%;
+    margin-bottom: .3rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.main {
+    margin: 1rem auto;
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.main h1 {
+    font-size: 1.5rem;
+    margin-bottom: .4rem ;
+    font-weight: 900;
+    align-self: center;
+}
+.main > p {
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, .467);
+    font-size: 18px;
+    text-align: center;
+    /* line-height: 1rem; */
+}
+
+.music {
+    padding: .5rem .5rem;
+    display: flex;
+    align-items: center;
+    /* background-color: rgba(139, 43, 226, .11); */
+    border-radius: 20px;
+    background-color: rgba(106, 136, 228, 0.1);
+}
+.music img {
+    width: 60px;
+    padding: .3rem .5rem;
+}
+.music h5 {
+    font-size: 18px;
+    padding-left: .5rem;
+    font-weight: 600;
+}
+.music h5 span {
+    display: block;
+    font-size: 16px;
+    color: rgba(0, 0, 0,.467);
+}
+.music a {
+    margin-left: auto;
+    padding-right: 1rem;
+}
+
+
+.payment-btn {
+    margin-top: 1.5rem;
+    border: none;
+    padding: .5rem 1rem;
+    background-color: rgba(65, 105, 225, 1);
+    border-radius: 15px;
+    box-shadow: 0 8px 5px 5px rgba(65, 103, 226, .11);
+    color: #fff;
+    font-size: 22px;
+}
+.cancel-btn {
+    margin-top: .8rem ;
+    border: none;
+    background: none;
+    font-size: 16px;
+    color: rgba(0, 0, 0, .467);
+    font-weight: 100;
+    box-shadow: inset;
+}
+

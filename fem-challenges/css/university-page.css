@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sec {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url(/images/eduford_img/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+img {
+    width: 40px;
+}
+.header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: green; */
+    position: relative;
+}
+.logo {
+    margin-left:50px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.logo h1 {
+    font-size: 22px;
+    color: #fff;
+    padding-left: .8rem;
+    text-align: center;
+}
+.logo img:hover{cursor: pointer;}
+
+.navbar {
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.showMenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: green;
+    /* color: green; */
+    width: 200px;
+    height: 100vh;
+}
+.navbar .fa-solid {
+    color: #fff;
+    font-size: 24px;
+    display: none;
+}
+.navbar ul {
+    display: flex;
+
+}
+.navbar ul li {
+    list-style: none;
+
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgba(255,255,0,.4);
+    padding: 5px 8px;
+    transition: all .5s ease-in-out;
+}
+.navbar ul li a:hover {
+    background-color: blanchedalmond;
+    color: rgba(0,0,0,.8);
+}
+
+.container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.container h1 {
+    font-size: 50px;
+    padding: 1rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+.container p {
+    font-size: 24px;
+    padding: 10px;
+    color: rgb(255, 255, 255, .7);
+    text-align: center;
+}
+.btn {
+    outline:  none;
+    padding: 14px 18px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: rgb(255, 255, 255, .7);
+    font-size: 18px;
+    margin: 1.3rem 0;
+    text-align: center;
+    position: relative;
+}
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 12%;
+    height: 2px;
+    top:50%;
+    left: -14px;
+    margin-right: 1rem;
+    background-color: #fff;
+}
+.btn:after{
+    content: "";
+    position: absolute;
+    width: 12%;
+    height: 2px;
+    top:50%;
+    right: -30px;
+    margin-right: 1rem;
+    background-color: #fff;
+    transition: all 3s ease-in-out;
+}
+.btn:hover {
+    background-color: blanchedalmond;
+    color: rgba(0,0,0,.8);
+}
+
+/* //all h1 and ps  */
+h1 {
+    text-align: center;
+    font-size: 3.7rem;
+    padding: .5rem;
+}
+p {
+    text-align: center;
+    font-size: 16px;
+    color: rgba(0,0,0,.4); 
+}
+
+/* / Sec-courses styles / */
+.sec-course {
+    margin:auto;
+    width: 80%;
+    padding-top: 100px;
+}
+/* .sec-course > h1 {
+    text-align: center;
+    font-size: 3.7rem;
+    padding: .5rem;
+}
+.sec-course > p {
+    text-align: center;
+    font-size: 16px;
+    color: rgba(0,0,0,.4);
+} */
+.row {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.course {
+    flex: 1 1 33.33%;
+    margin-top: 2rem;
+    padding: .8rem;
+    background-color: rgba(171, 117, 126, 0.3);
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    /* margin-bottom: 5%; */
+    transition: all 1s ease-in-out;
+}
+.course h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.course h1, p{
+    padding: .5rem;
+}
+.course:hover {
+    box-shadow: 5px 5px 7px 7px rgba(93, 73, 90,.3);
+}
+
+/* / Sec-campus styles / */
+.sec-campus {
+    margin:auto;
+    width: 80%;
+    padding-top: 50px;
+}
+/* .sec-campus > h1 {
+    text-align: center;
+    font-size: 3.7rem;
+    padding: .5rem;
+}
+.sec-campus > p {
+    text-align: center;
+    font-size: 16px;
+    color: rgba(0,0,0,.4);
+} */
+
+.campus {
+    flex-basis: 32%;
+    margin: 3% 0 5%;
+    background-color: blue;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.campus img {
+    width: 100%;
+    display: block;
+}
+.layer {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+.layer:hover {
+    background: rgba(255, 0, 0, 0.7);
+}
+.layer h3 {
+    padding: 10px;
+    color: #fff;
+    font-size: 22px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+
+/* /section facilty styles/ */
+.facilities {
+    margin: auto;
+    width: 80%;
+    padding-top: 50px;
+}
+/* .facilities > h1 {
+    text-align: center;
+    font-size: 3.7rem;
+    padding: .5rem;
+}
+.facilities > p {
+    text-align: center;
+    font-size: 16px;
+    color: rgba(0,0,0,.4);
+} */
+.facility {
+    flex: 32%;
+    margin: 3%  0 5%;
+}
+.facility img {
+    width: 100%;
+    border-radius: 10px;
+}
+.facility >h2 {
+    padding: 10px 0 0;
+    font-size: 18px;
+}
+.facility p {
+    text-align: left;
+    padding-left: 0;
+    color: rgba(0,0,0,.4);
+}
+
+/* /section testi-monials styles/ */
+.testi-monials {
+    margin: auto;
+    width: 80%;
+    padding-top: 30px;
+}
+/* .testi-monials > h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: .5rem;
+}
+.testi-monials > p {
+    text-align: center;
+    font-size: 16px;
+    color: rgba(0,0,0,.4);
+} */
+.testi-monial {
+    flex-basis: 48%;
+    margin: 3% 0 5%;
+    background-color: rgba(255, 228, 196,.278);
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.testi-monial img {
+    align-self: self-start;
+    border-radius: 100%;
+    margin: 0 1rem;
+}
+.testi-monial .detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail > p {
+    color: rgba(0,0,0,.4);
+    padding-bottom: 15px;
+}
+.detail > h2 {
+    font-size: 16px;
+    padding-left: 0;
+    padding-bottom: 10px;
+}
+.icons {
+    padding-left: 0;
+    color: rgba(255, 0, 0, 0.8);
+    /* display: flex; */
+}
+
+
+
+/* /section contact styles/ */
+.sec-contact {
+    margin: auto;
+    width: 80%;
+    padding-top: 50px;
+}
+.contact {
+    margin: 3% 5%;
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6)),
+    url(/images/eduford_img/banner2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1rem .6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    padding: 30px 0 10px;
+}
+
+
+/* /section footer styles/ */
+
+.footer {
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.footer h1 {
+    text-align: center;
+    padding: 0 0 1rem;
+}
+.footer p {
+    color: rgba(0,0,0,.4);
+    padding: 0 0 .5rem;
+}
+.footer .icons .fa-brands{
+    margin: .5rem 5px .5rem;
+    cursor: pointer;
+}
+.fa-heart {
+    color: rgba(255, 0, 0, 0.7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* seting the media-queries  */
+@media screen and (max-width: 786px) {
+
+    /* //Hiding the menuBars */
+    .navbar ul {
+        display: none
+    }
+    /* reducing font-size of h1  */
+    .container h1 {
+        font-size: 18px;
+    }
+    .container p {
+        font-size: 14px;
+    }
+
+    /* //showing the bars  */
+    .navbar .fa-solid {
+        display: block;
+        margin-right: -40px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+
+    /* // all flex-items displaying in column way  */
+    .row {
+        flex-direction: column;
+    }
+}
