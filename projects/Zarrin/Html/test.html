@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hero {
+  position: relative;
+  background-image: url('../images/Ai-4.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 40px;
+  color: white;
+}
+
+.overlay-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* Mobile: make it vertical */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .overlay-text {
+    position: static;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="hero">
+  <div class="overlay-text">
+    <h2>Welcome</h2>
+    <p>Your message here...</p>
+  </div>
+</div>
+</body>
+</html>
