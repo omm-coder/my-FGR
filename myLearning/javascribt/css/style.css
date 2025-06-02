@@ -1,0 +1,46 @@
+.divtable {
+    border: 3% solid #2c5e;
+    /* margin: 10% 4%; */
+    border-radius: 5%;
+    background-color: #9999;
+    width: 100%;
+}
+.tableOfDom {
+    border-collapse: collapse;
+    /* width: 100%; */
+    margin: 8% 4%;
+    padding: 6%;
+    width: fit-content;
+    /* background-color: #2c5e99; */
+}
+
+.sec-form {
+    margin-top: 3rem;
+    background-color: #777;
+    border: 1px solid #1111;
+    padding: 2rem;
+    text-align: center;
+    height: 30vh;
+}
+#email-error {
+    display: none;
+}
+input[type="email"]:valid {
+    border: thick solid ; 
+}
+
+input[type="email"]:invalid {
+    border: thick solid red; 
+}
+
+
+#area1 {
+    background-color: palegoldenrod; 
+    width:200px; 
+    height:100px; 
+    border:1px solid red; 
+    margin: 50px;
+}
+
+
+

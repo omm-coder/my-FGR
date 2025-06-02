@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(243, 185, 114);
+    font-family: Tahoma;
+}
+.container {
+    width: 300px;
+    margin: 13vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+}
+#form {
+    border-radius: 4px;
+    font-size: 12px;
+}
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+#form label {
+    padding-left: 5px;
+}
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 10px;
+}
+.form-control input:focus {
+    outline: none;
+}
+
+.form-control.success input{
+    border: 2px solid #09c372;
+}
+.form-control.error input {
+    border: 2px solid #ff3860;
+}
+
+.form-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+.div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+#forget {
+    text-decoration: none;
+}
+.create {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0 0;    
+}
+

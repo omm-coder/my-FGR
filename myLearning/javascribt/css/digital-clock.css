@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #210b44;
+    height: 100vh;
+}
+
+h1 {
+    color: #fef7ff;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.container {
+    width: 300px;
+    padding: 8px;
+    color: #fef7ff;
+    text-align: center;
+    background: linear-gradient(to right, red, purple);
+}
+.box {
+    background-color: #111;
+}
+h2 {
+    font-family: arial;
+    font-size: 40px;
+    text-shadow: 4px 4px 28px red;
+    padding: 2rem;
+}

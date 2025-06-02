@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            place-items: center;
+        }
+
+        form {
+            margin: 80px auto;
+            background-color: tan;
+            width: 300px;
+            height: 220px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        input[type="text"],
+        input[type='password'] {
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            width: 100%;
+            padding: 8px 14px;
+            border-radius: 12px;
+            border: none;
+            outline: none;
+        }
+
+        input[type='submit'] {
+            /* margin-top: 15px; */
+            width: 50%;
+            border: none;
+            outline: none;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 22px;
+            background-color: antiquewhite;
+            color: #111;
+            transition: all .3s ease;
+        }
+
+        input[type='submit']:hover {
+            background-color: rgb(243, 202, 148);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <h1>Registeration Form</h1>
+        <input type="text" id="userName" placeholder="enter userName"> <br>
+        <input type="password" id="password" placeholder="enter a password"> <br>
+        <input type="submit" value="Sign up" id="submit">
+    </form>
+
+
+    <!-- script js  -->
+    <script>
+        submit.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent form submission reload if it's a form
+
+            if (userName.value.trim() === '' || password.value.trim() === '') {
+                alert('Fields cannot be blank');
+                return; // Stop further execution
+            }
+
+            if (userName.value.length >= 3 && password.value.length >= 5) {
+                let users = JSON.parse(localStorage.getItem("users")) || [];
+
+                users.push({
+                    userName: userName.value,
+                    password: password.value
+                });
+
+                localStorage.setItem('users', JSON.stringify(users));
+
+                alert('User saved successfully!');
+            } else {
+                alert('Username must be at least 3 chars and password at least 5 chars');
+            }
+            var my_users = JSON.parse(localStorage.getItem("users")) || [];
+            for (let user of my_users) {
+                for (let name in user) {
+                    console.log(user[name]);
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

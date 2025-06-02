@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 400px;
+            margin:  40px auto;
+            background-color: #494944;
+            position: relative;
+        }
+        .animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="text">Dom Animation</h1>
+    <div class="container" id="cont">
+        <div class="animate" id="animate"></div>
+    </div>
+
+
+
+    <!-- <scrpitn  js -->
+     <script>
+        let container = document.getElementById('cont');
+        let animate = document.getElementById('animate');
+        let text = document.getElementById('text');
+        let pos = 0;
+        let opacity = 0;
+        text.style.opacity = opacity;
+
+        function myMove() {
+            if (pos < 350) {
+                pos++;
+                animate.style.top = pos + 'px';
+                animate.style.left = pos + 'px';
+                requestAnimationFrame(myMove)
+            }
+            else {
+                pos = 0;
+                setTimeout(myMove, 1000);
+            }
+        }
+        myMove();
+
+
+
+        function fadeOut() {
+            let interval = setInterval(() => {
+                if(opacity < 1) {
+                    opacity += 0.1;
+                    text.style.opacity = opacity;
+                }
+                else {
+                    clearInterval(interval);
+                    opacity = 0;
+                    setTimeout(fadeOut, 2000)
+                }
+            }, 2000)
+        }
+        fadeOut();
+     </script>
+</body>
+</html>

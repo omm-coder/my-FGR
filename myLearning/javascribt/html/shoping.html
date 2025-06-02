@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+            background-color: #f2f2f2;
+            font-family: system-ui;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #c4caf4;
+            width: 500px;
+            height: 400px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .container h1 {
+            color: #222;
+            font-size: 38px;
+        }
+        input {
+            width: 200px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 12px;
+        }
+        .add_btn {
+            margin-left: 10px;
+            border: none;
+            background-color: #222;
+            color: #f0f8f8;
+            padding: 8px 16px;
+            font-size: 18px;
+            border-radius: 14px;
+            transform: scale .3s ease;
+        }
+        .add_btn:hover { transform: scale(1.06);}
+        .itemList {
+            margin: 20px 0;
+            /* background-color: red; */
+        }
+        .itemList h2 {
+            text-align: left;
+            padding-left: 50px;
+
+        }
+        ul li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #b6b6b1;
+            border-radius: 12px;
+            padding: 8px 16px;
+            margin: 10px;
+        }
+        .delete_btn {
+            border: none;
+            background-color: #f93131;
+            color: #494944;
+            padding: 8px 16px;
+            font-size: 18px;
+            border-radius: 14px;
+            transform: all .3s ease;
+        }
+        .delete_btn:hover { background-color: #c43030;}
+    </style>
+</head>
+<body>
+
+    <div class="container" id="parent-container">
+        <input type="text" placeholder="Enter Item" id="input-item"/>
+        <button class="add_btn" id="add_btn_item">Add Item</button>
+    </div>
+
+
+    <script src="../Js/shopping.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            margin: 40px auto;
+            width: 500px;
+            background-color: papayawhip;
+            border-radius: 12px;
+            padding: 30px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 10px #da7171;
+        }
+        .div h1 { text-align: center; color: #e00b0b;}
+        ul li {
+            list-style: none;
+            background-color: coral;
+            color: #f0f0f0;
+            padding: 10px 22px;
+            margin: 10px 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <h1>Posesive Pronoun</h1>
+        <ul>
+            <li>it's me</li>
+            <li>it's You</li>
+            <li>it's Us</li>
+            <li>it's him</li>
+            <li>it's her</li>
+            <li>it's it</li>
+        </ul>
+    </div>
+
+    <script>
+        let my_list = document.querySelector('ul');
+
+        my_list.addEventListener('click', (e) => {
+            alert(`You clicked ${e.target.tagName} that has ${e.target.textContent}`)
+            my_list.removeChild(e.target)
+        }) 
+    </script>
+</body>
+</html>
