@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blur Example</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .original, .blurred {
+      width: 300px;
+      height: 200px;
+    }
+
+    .original img, .blurred img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .blurred img {
+      filter: blur(6px);
+    }
+
+    .glass {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 200px;
+      height: 100px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .background {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      background: url('https://picsum.photos/800/400') no-repeat center/cover;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Basic Blur</h2>
+  <div class="container">
+    <div class="original">
+      <img src="https://picsum.photos/300/200" alt="Original">
+    </div>
+    <div class="blurred">
+      <img src="https://picsum.photos/300/200" alt="Blurred">
+    </div>
+  </div>
+
+  <h2>Frosted Glass Blur</h2>
+  <div class="background">
+    <div class="glass">Frosted Glass</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+h1 {
+  font-size: clamp(1rem, 10vw, 3.5rem);
+}
+
+@media Screen and (min-width: 1000px) {
+    body {
+      background-color: papayawhip;
+    }
+  }
+  
+  @media Screen and (max-width: 800px) {
+    body {
+      background-color: blue;
+    }
+  }
+
+  @media Screen and (max-width: 600px) {
+    body {
+      background-color: red;
+    }
+  }
+  

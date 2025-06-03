@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sec {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.2)),
+    url("https://onnitacademy.imgix.net/2016/09/battleropes-1440x900.jpg");
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  background-size: cover;
+  position: relative;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  background-color: transparent;
+}
+header h1 {
+  font-size: 5ch;
+  font-weight: bold;
+  color: #f8f8f8;
+}
+nav a {
+  text-decoration: none;
+  padding: 8px 14px;
+  color: #f8f8f8;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+nav a:hover {
+  background-color: #f8f8f8;
+  color: #000;
+  border-radius: 20px;
+}
+button {
+  border: 1px solid #f8f8f8;
+  background-color: transparent;
+  color: #f8f8f8;
+  font-size: 18px;
+  padding: 12px 22px;
+  border-radius: 16px;
+  transition: 0.3s ease;
+}
+button:hover {
+  background-color: #f8f8f8;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* //main style goes here // */
+main {
+  margin-top: 80px;
+  margin-left: 80px;
+  max-width: 1000px;
+  width: 50%;
+}
+main h1 {
+  font-size: 8ch;
+  color: #f8f8f8;
+  margin-bottom: 10px;
+}
+main p {
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+}
+main button {
+  border: none;
+  padding: 10px 22px;
+  background-color: rgb(143, 11, 11);
+  color: #f8f8f8;
+  font-size: 18px;
+}
+
+/* //container part style goes here//  */
+.container {
+  background-color: #000;
+  color: #f8f8f8;
+  padding: 30px;
+  position: absolute;
+  left: 130px;
+  bottom: -40px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  gap: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.06);
+}
+.container .content {
+  display: flex;
+  /* align-items: center; */
+  gap: 0 10px;
+}
+.content i {
+  font-size: 50px;
+  margin: 0 10px 0 0;
+}
+.info h2 {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.info p {
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+}
+
+/* //section2 style goes here // */
+.sec2 {
+  margin: 100px auto;
+  max-width: 1000px;
+  width: 90%;
+  background-color: #000;
+  color: white;
+  border-radius: 20px;
+}
+.sec2 .about {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-rows: auto;
+  align-items: center;
+}
+.about img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.about-Info h1 {
+  padding: 10px 0;
+  font-size: 40px;
+  color: red;
+}
+.about-Info p {
+  font-size: 22px;
+  color: #999;
+}
+
+.about-Info button {
+  margin-top: 20px;
+  background-color: rgb(143, 11, 11);
+  border: none;
+}
+.about-Info button:hover {
+  color: #fff;
+}
+
+/* // workout-plan style goes here// */
+.workOut-plan {
+  margin: 80px auto 80px;
+  background-color: #000;
+  border-radius: 12px;
+  max-width: 1000px;
+  width: 90%;
+}
+.workOut-plan h1 {
+  padding: 15px 0 5px;
+  text-align: center;
+  font-size: 48px;
+  color: #f8f8f8;
+}
+.workOut-plan > p {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.plans {
+  padding: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-rows: auto;
+  gap: 10px 30px;
+}
+.plan {
+  /* background-color: #fdfcfc; */
+  background-color: #b3b3b3;
+  padding: 10px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 10px 0 30px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.plan:hover {
+  transform: translateY(-5px);
+}
+.plan i {
+  font-size: 30px;
+  margin: 10px 0;
+  color: #494949;
+  transition: color 0.3s ease;
+}
+.plan:hover i {
+  color: crimson;
+}
+.plan h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.plan p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* //contact part style goes here//  */
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 60px;
+  background: #1a1a1a;
+  color: #f0f8f8;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #f44336;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+.contact-form {
+  background: #222;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: #333;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #e53935;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+    main {
+        margin: 80px 20px 0;
+        width: 50%;
+
+    }
+    main h1 {
+        font-size: 6ch;
+    }
+    main p {
+        font-size: 20px;
+    }
+    .container {
+        display: none;
+    }
+  .contact-section {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+}
+
+
+@media screen and (max-width:680px) {
+    header {
+        justify-content: space-between;
+        padding: 8px 10px;
+    }
+    main {
+        margin-left: 50px;
+        width: 80%;
+    }
+    main h1 {
+        font-size: 6ch;
+    }
+    main p {
+        font-size: 20px;
+    }
+}

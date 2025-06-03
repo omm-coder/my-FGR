@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Portofolio</title>
+    <!-- <link rel="stylesheet" href="../css/portofolio.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="bg-yellow-400 flex justify-between items-center px-6 max-sm:justify-center">
+        <h1 class="text-4xl pb-1 text-slate-700 hover:cursor-pointer " >Mongo Juice</h1>
+        <nav class=" flex items-center gap-4 hidden sm:block">
+            <ul class="flex">
+                <li class="px-3 py-2"><a  class="text-lg hover:text-white" href="#">Home</a></li>
+                <li class="px-3 py-2"><a class="text-lg hover:text-white" href="#">About</a></li>
+                <li class="px-3 py-2"><a  class="text-lg hover:text-white" href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="my-15 mx-auto p-1 max-w-6xl grid grid-cols-1 gap-30  min-lg:grid-cols-2
+    justify-center items-center ">
+       <div class="about ">
+        <h2 class="p-2 text-slate-700 text-5xl max-sm:text-2xl ">About Mango</h2>
+        <p class="p-1 text-slate-900 text-base max-md:p-2">Lorem ipsum dolor sit, amet consectetur adipisicing 
+        elit. Sed iste odit est velit alias sapiente eveniet harum minus beatae, explicabo animi quasi, 
+        numquam modi corrupti dolorem dolores! Similique fuga maiores optio perferendis, nostrum qui reiciendis 
+        quia. Est neque nesciunt maiores perferendis iusto consequatur similique repellat. In nulla molestias voluptas aliquam optio, qui veniam quaerat exercitationem praesentium minima rerum, quam quas.</p>
+        <button class="btn px-6 py-2 mt-2 bg-yellow-500 rounded-xl hover:bg-yellow-700
+        hover:scale-112 shadow-xl">Resume</button>
+       </div>
+       <div class="w-full lg:w-1/2 bg-yellow-500 rounded-full overflow-hidden shadow-xl/30">
+            <img class="w-full inline-block object-cover" src="../imges/modelyn-removebg-preview.png" alt="">
+       </div>
+    </main>
+    <div class="footer bg-yellow-400 text-3xl text-slate-700 text-center p-10 mt-17">
+        <h1>Mango Best Juice</h1>
+    </div>
+</body>
+</html>
